@@ -1,1 +1,188 @@
-const _0xdb8e07=_0x3c0e;function _0x3c0e(_0x564a53,_0x49db70){const _0x332bd8=_0x1c1b();return _0x3c0e=function(_0x4cab13,_0x2c05b8){_0x4cab13=_0x4cab13-(0x76e+0x1830*0x1+-0x1db2);let _0x52d947=_0x332bd8[_0x4cab13];return _0x52d947;},_0x3c0e(_0x564a53,_0x49db70);}(function(_0x33be2a,_0x33c74c){const _0x54e71a=_0x3c0e,_0x586bc6=_0x33be2a();while(!![]){try{const _0x4fd8a5=parseInt(_0x54e71a(0x237))/(-0x10f5+-0x2660*0x1+0x3756*0x1)*(parseInt(_0x54e71a(0x1fc))/(-0x1fd*0x8+-0x1494+-0x12*-0x207))+parseInt(_0x54e71a(0x236))/(-0xda*0x2d+0x85*-0x42+0x489f)*(parseInt(_0x54e71a(0x242))/(0x16f*-0x11+-0x8*0x236+0x2a13))+parseInt(_0x54e71a(0x1ef))/(0x2405+-0x2*-0x837+0x8bd*-0x6)+-parseInt(_0x54e71a(0x20b))/(-0x11d6+0x7*-0x426+0x1*0x2ee6)*(parseInt(_0x54e71a(0x26d))/(-0x2320+-0x1285+0xa*0x55e))+parseInt(_0x54e71a(0x255))/(0x2686+0x1*0x1fc9+-0x9*0x7cf)*(-parseInt(_0x54e71a(0x261))/(0x1476+-0x526+-0xf47))+parseInt(_0x54e71a(0x22f))/(0x155*-0x5+0x14f*-0x1+-0x401*-0x2)*(-parseInt(_0x54e71a(0x22e))/(0x14e7+-0x1b4a+0x66e))+-parseInt(_0x54e71a(0x23a))/(-0xe3*-0xd+0x1*-0x1183+0x608)*(-parseInt(_0x54e71a(0x273))/(0x1165+0x267c+-0x37d4));if(_0x4fd8a5===_0x33c74c)break;else _0x586bc6['push'](_0x586bc6['shift']());}catch(_0x7abefd){_0x586bc6['push'](_0x586bc6['shift']());}}}(_0x1c1b,-0xb6e8f+0xba845+0x1*0x6648a));import _0x8dd0bd from'node-fetch';let handler=async(_0x2c63c8,{conn:_0x3f272f,args:_0x35d1a6,text:_0x53ef65,usedPrefix:_0x556804,command:_0x5ddc2d})=>{const _0x2e27b6=_0x3c0e,_0x3a6488={'AOzVi':function(_0x19c0b3,_0x397575){return _0x19c0b3+_0x397575;},'bPfBM':_0x2e27b6(0x259),'BTTem':function(_0x2e9cff,_0x2ebe7d){return _0x2e9cff(_0x2ebe7d);},'WkppP':_0x2e27b6(0x239),'TGPlf':_0x2e27b6(0x1f6),'UiiWu':_0x2e27b6(0x221),'VTqVx':function(_0x19cce2,_0x23d82e){return _0x19cce2(_0x23d82e);},'DCGlX':_0x2e27b6(0x244),'FzvJM':function(_0x1578b8,_0x449e5e){return _0x1578b8(_0x449e5e);},'hKQim':_0x2e27b6(0x26e),'HFksu':_0x2e27b6(0x211)+'h','sGMyj':_0x2e27b6(0x229)+'ow','tZvqj':_0x2e27b6(0x1f8)+'t','cAbZJ':function(_0x4194d8,_0x60a4a3){return _0x4194d8(_0x60a4a3);},'CjWNp':_0x2e27b6(0x24e),'XxZoI':_0x2e27b6(0x252),'bKqtE':_0x2e27b6(0x1fb),'uujhm':_0x2e27b6(0x206),'lNqCX':function(_0x5617ff,_0xe9bcb4){return _0x5617ff(_0xe9bcb4);},'xiyKo':_0x2e27b6(0x26c)+_0x2e27b6(0x22a)+_0x2e27b6(0x1f4),'UOkqV':function(_0x38a0ea,_0xed6ede){return _0x38a0ea(_0xed6ede);},'GPtIq':_0x2e27b6(0x201),'NpNhj':_0x2e27b6(0x1f5)+_0x2e27b6(0x227)+_0x2e27b6(0x234)+_0x2e27b6(0x21b)+_0x2e27b6(0x219)+_0x2e27b6(0x1fa),'EHBTI':_0x2e27b6(0x220)+_0x2e27b6(0x256)+':','xTvzZ':_0x2e27b6(0x1ee)+_0x2e27b6(0x254)+_0x2e27b6(0x25d)+_0x2e27b6(0x1fd)+_0x2e27b6(0x23c)+_0x2e27b6(0x22d)+_0x2e27b6(0x266)};let _0x3cf1a0=_0x2e27b6(0x209)+mssg[_0x2e27b6(0x232)]+_0x2e27b6(0x208)+mssg[_0x2e27b6(0x20a)]+_0x2e27b6(0x23f)+_0x3a6488[_0x2e27b6(0x1f3)](_0x556804,_0x5ddc2d)+_0x2e27b6(0x23b);_0x2c63c8[_0x2e27b6(0x1ed)](rwait);let _0x334d7c;switch(_0x5ddc2d){case _0x3a6488[_0x2e27b6(0x23e)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x20c)+_0x2e27b6(0x249)+_0x2e27b6(0x224)+_0x2e27b6(0x21e)+_0x3a6488[_0x2e27b6(0x257)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x265)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x235)+_0x2e27b6(0x23d)+_0x2e27b6(0x212)+_0x2e27b6(0x25f)+_0x3a6488[_0x2e27b6(0x257)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x204)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x267)+_0x2e27b6(0x215)+_0x2e27b6(0x20d)+_0x2e27b6(0x218)+_0x3a6488[_0x2e27b6(0x257)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x24c)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x258)+_0x2e27b6(0x21a)+_0x2e27b6(0x212)+_0x2e27b6(0x25f)+_0x3a6488[_0x2e27b6(0x225)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x25a)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x1f2)+_0x2e27b6(0x24d)+_0x2e27b6(0x20d)+_0x2e27b6(0x218)+_0x3a6488[_0x2e27b6(0x251)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x228)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x243)+_0x2e27b6(0x217)+_0x2e27b6(0x24f)+_0x2e27b6(0x205)+'='+_0x3a6488[_0x2e27b6(0x225)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x214)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x262)+_0x2e27b6(0x202)+_0x2e27b6(0x1f9)+_0x2e27b6(0x247)+_0x3a6488[_0x2e27b6(0x257)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x246)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x26f)+_0x2e27b6(0x250)+_0x2e27b6(0x20d)+_0x2e27b6(0x218)+_0x3a6488[_0x2e27b6(0x251)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x1ec)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x241)+_0x2e27b6(0x21d)+_0x2e27b6(0x1f9)+_0x2e27b6(0x247)+_0x3a6488[_0x2e27b6(0x226)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x264)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x1f1)+_0x2e27b6(0x272)+_0x2e27b6(0x1f0)+_0x2e27b6(0x216)+_0x3a6488[_0x2e27b6(0x225)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x238)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x253)+_0x2e27b6(0x210)+_0x2e27b6(0x248)+_0x2e27b6(0x21f)+_0x3a6488[_0x2e27b6(0x226)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x268)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x270)+_0x2e27b6(0x263)+_0x2e27b6(0x1f9)+_0x2e27b6(0x247)+_0x3a6488[_0x2e27b6(0x226)](encodeURIComponent,_0x53ef65);break;case _0x3a6488[_0x2e27b6(0x24b)]:if(!_0x53ef65)throw _0x3cf1a0;_0x334d7c=_0x2e27b6(0x223)+_0x2e27b6(0x200)+_0x2e27b6(0x22b)+_0x2e27b6(0x271)+_0x2e27b6(0x213)+_0x2e27b6(0x1ff)+_0x2e27b6(0x20d)+_0x2e27b6(0x218)+_0x3a6488[_0x2e27b6(0x25c)](encodeURIComponent,_0x53ef65);break;default:throw _0x3a6488[_0x2e27b6(0x1fe)];}try{const _0x514625=await _0x3a6488[_0x2e27b6(0x20e)](_0x8dd0bd,_0x334d7c),_0x3a39a6=await _0x514625[_0x2e27b6(0x230)]();if(_0x3a39a6[_0x2e27b6(0x22c)]&&_0x3a39a6[_0x2e27b6(0x20f)]&&_0x3a39a6[_0x2e27b6(0x20f)][_0x2e27b6(0x207)])_0x3f272f[_0x2e27b6(0x240)](_0x2c63c8[_0x2e27b6(0x24a)],_0x3a39a6[_0x2e27b6(0x20f)][_0x2e27b6(0x207)],_0x3a6488[_0x2e27b6(0x269)],_0x2e27b6(0x233)+_0x2e27b6(0x25b)+_0x2e27b6(0x25e),_0x2c63c8),_0x2c63c8[_0x2e27b6(0x1ed)](done);else throw _0x3a6488[_0x2e27b6(0x222)];}catch(_0x4201dd){console[_0x2e27b6(0x26a)](_0x3a6488[_0x2e27b6(0x231)],_0x4201dd),_0x2c63c8[_0x2e27b6(0x260)](_0x3a6488[_0x2e27b6(0x26b)]);}};handler[_0xdb8e07(0x203)]=[_0xdb8e07(0x259),_0xdb8e07(0x239),_0xdb8e07(0x26e),_0xdb8e07(0x221),_0xdb8e07(0x244),_0xdb8e07(0x1f6),_0xdb8e07(0x211)+'h',_0xdb8e07(0x229)+'ow',_0xdb8e07(0x1f8)+'t',_0xdb8e07(0x24e),_0xdb8e07(0x252),_0xdb8e07(0x1fb),_0xdb8e07(0x206)],handler[_0xdb8e07(0x1f7)]=[_0xdb8e07(0x21c)],handler[_0xdb8e07(0x245)]=/^(papercut|logomaker|bpstyle|pixelglitch|advancedglow|lighteffect|texteffect|galaxy|writetext|glossy|cartoon|beach|clouds)$/i;export default handler;function _0x1c1b(){const _0x4eec96=['?apikey=gi','pixelglitc','=gifted-md','360/effect','HFksu','nstyle?api','d&text=','inkstyle?a','-md&text=','\x20again\x20lat','ext?apikey','Please\x20try','maker','ffect?apik','text=','xt=','Error\x20fetc','writetext','NpNhj','https://ap','gifted-md&','VTqVx','cAbZJ','generate\x20t','hKQim','advancedgl','t\x20recogniz','ch.web.id/','success','\x20try\x20again','8007659eniJhP','10NwuYwf','json','EHBTI','notext','*𝙿𝙾𝚆𝙴𝚁𝙴𝙳\x20𝙱','he\x20image.\x20','360/logoma','318927taZYQU','94225gavpCT','XxZoI','logomaker','1932BOBSbn','*\x20MEGA\x20AI','ge.\x20Please','ker?apikey','bPfBM',':\x20*','sendFile','360/lighte','20lnLXQq','360/blackp','glossy','command','sGMyj','md&text=','fted-md&te','ut?apikey=','chat','uujhm','UiiWu','silver?api','texteffect','pikey=gift','edglow?api','FzvJM','galaxy','360/galaxy','ccurred\x20wh','120Paugma','hing\x20image','BTTem','360/writet','papercut','DCGlX','𝚈\x20©\x20𝙼𝙴𝙶𝙰-𝙰','lNqCX','ile\x20fetchi','𝙸*','&text=','reply','179811taxwaq','360/pixelg','beach?apik','CjWNp','WkppP','\x20later.','360/cartoo','bKqtE','GPtIq','error','xTvzZ','Command\x20no','7aiCcJF','bpstyle','360/advanc','360/summer','api/ephoto','fect?apike','83096GWzBmv','tZvqj','react','An\x20error\x20o','2856665oEDJWt','y=gifted-m','360/textef','360/glossy','AOzVi','ed.','Failed\x20to\x20','cartoon','tags','lighteffec','ey=gifted-','er.','beach','2ymKmKO','ng\x20the\x20ima','xiyKo','clouds?api','i.giftedte','logo.png','litch?apik','help','TGPlf','ed-md&text','clouds','image_url','\x0a\x0a📌\x20','✳️\x20','example','4588998LrzozO','360/paperc','key=gifted','UOkqV','result'];_0x1c1b=function(){return _0x4eec96;};return _0x1c1b();}
+import fetch from 'node-fetch';
+
+let handler = async (m, { conn, args, text, usedPrefix, command }) => {
+   let tee = `✳️ ${mssg.notext}\n\n📌 ${mssg.example}: *${usedPrefix + command}* MEGA AI`
+   m.react('⌛')
+
+   let apiUrl;
+   switch (command) {
+      case 'mascot':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/mascot?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+         
+      case 'foggy':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/foggy?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'golden':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/golden?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'wgalaxy':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/wgalaxy?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'metallic':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/mettalic?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+         
+      case 'gradient':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/gradient?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'snake':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/snake?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case '3dsilver':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/3dsilver?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'jewel':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/jewel?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'metal':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/metal?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'galaxy':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/galaxy?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'blackpink':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/blackpink?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'sand':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/sand?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'cubic':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/cubic?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'nigeria':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/nigeria?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'gaming':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/gaming?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'gold':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/gold?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'splat':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/paintsplat?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'color':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/colorful?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'matrix':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/matrix?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'wings':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/angelwing?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'papercut':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/papercut?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'gsilver':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/gsilver?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'hacker':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/hacker?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'balon':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/ballon?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'galaxy2':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/galaxy2?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'typo':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/typography?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'circle':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/circlemascot?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      case 'star':
+         if (!text) throw tee;
+         apiUrl = `https://globaltech-api.onrender.com/api/ephoto/star?apikey=APIKEY&text=${encodeURIComponent(text)}`;
+         break;
+
+      default:
+         throw 'Command not recognized.';
+   }
+
+   // Fetch the image URL from the API
+   try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+
+      if (data.status && data.result && data.result.imageUrl) {
+         // Send the image to the user with the correct file extension
+         const imageUrl = data.result.imageUrl;
+         const fileExtension = imageUrl.split('.').pop(); // Extract the file extension
+         conn.sendFile(m.chat, imageUrl, `logo.${fileExtension}`, `*𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 © 𝙼𝙴𝙶𝙰-𝙰𝙸*`, m);
+         m.react('✅');
+      } else {
+         throw 'Failed to generate the image. Please try again later.';
+      }
+   } catch (error) {
+      console.error('Error fetching image:', error);
+      m.reply('An error occurred while fetching the image. Please try again later.');
+   }
+}
+   
+// Updated help and command properties
+handler.help = [
+   'mascot', 'foggy', 'golden', 'wgalaxy', 'metallic', 'gradient', 'snake', '3dsilver', 'jewel', 
+   'metal', 'galaxy', 'blackpink', 'sand', 'cubic', 'nigeria', 'gaming', 'gold', 'splat', 'color', 
+   'matrix', 'wings', 'papercut', 'gsilver', 'hacker', 'balon', 'galaxy2', 'typo', 'circle', 'star'
+];
+handler.tags = ['maker'];
+handler.command = /^(mascot|foggy|golden|wgalaxy|metallic|gradient|snake|3dsilver|jewel|metal|galaxy|blackpink|sand|cubic|nigeria|gaming|gold|splat|color|matrix|wings|papercut|gsilver|hacker|balon|galaxy2|typo|circle|star)$/i;
+
+export default handler;
+            

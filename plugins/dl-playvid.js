@@ -1,34 +1,18 @@
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-import fs from 'fs';
-import path from 'path';
 import fetch from 'node-fetch';
 import pkg from 'api-qasim'; // Import ytmp4 from api-qasim package
 import yts from 'youtube-yts';
-import ffmpeg from 'fluent-ffmpeg'; // Import fluent-ffmpeg for video to audio conversion
-import { promisify } from 'util';
+import fs from 'fs';
 import { pipeline } from 'stream';
-import mime from 'mime-types';  // Import mime-types to dynamically determine MIME type
-
+import { promisify } from 'util';
+import os from 'os';
 const { ytmp4 } = pkg;
+
 const streamPipeline = promisify(pipeline);
 
-// Create __dirname for ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-// Custom temporary directory
-const customTmpDir = path.join(__dirname, 'custom_tmp');
-
-// Ensure the custom_tmp directory exists
-if (!fs.existsSync(customTmpDir)) {
-  fs.mkdirSync(customTmpDir);
-}
-
 const handler = async (m, { conn, command, text, args, usedPrefix }) => {
-  if (!text) throw `Give a text to search Example: *${usedPrefix + command}* sefali odia song`;
+  if (!text) throw `give a text to search Example: *${usedPrefix + command}* sefali odia song`;
   conn.ultra = conn.ultra ? conn.ultra : {};
-  await m.react('🎶');
+  await conn.reply(m.chat, wait, m);
   const result = await searchAndDownloadMusic(text);
   const infoText = `✦ ──『 *ULTRA PLAYER* 』── ⚝ \n\n [ ⭐ Reply the number of the desired search result to get the Audio]. \n\n`;
 
@@ -63,19 +47,19 @@ handler.before = async (m, { conn }) => {
   const inputNumber = Number(choice);
   if (inputNumber >= 1 && inputNumber <= result.allLinks.length) {
     const selectedUrl = result.allLinks[inputNumber - 1].url;
-
+    console.log('selectedUrl', selectedUrl);
+    
     try {
       // Fetch video details using ytmp4
       const response = await ytmp4(selectedUrl);
-
+      
       // Validate response and ensure we have a video URL
       if (!response || !response.video) {
         throw new Error('No video URL found.');
       }
-
       const videoUrl = response.video;
 
-      // Fetch the video file buffer
+      // Fetch video file buffer using retry logic
       const mediaResponse = await fetchWithRetry(videoUrl, {
         headers: {
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36',
@@ -92,49 +76,17 @@ handler.before = async (m, { conn }) => {
       const mediaBuffer = Buffer.from(arrayBuffer);
       if (mediaBuffer.length === 0) throw new Error('Downloaded file is empty');
 
-      // Create a temporary file for the video in the custom directory
-      const videoPath = path.join(customTmpDir, 'video.mp4');
-      fs.writeFileSync(videoPath, mediaBuffer);
+      // Send the video file with the relevant caption
+      const caption = `*Title:* ${response.title || 'No Title'}\n` +
+                      `*Author:* ${response.author || 'Unknown'}\n` +
+                      `*Duration:* ${response.duration || 'Unknown'}\n` +
+                      `*Views:* ${response.views || '0'}\n` +
+                      `*Uploaded on:* ${response.upload || 'Unknown Date'}`;
 
-      // Convert the video to audio (MP3 format) using ffmpeg
-      const audioPath = path.join(customTmpDir, 'audio.mp3');
-
-      // Convert video to audio and send only the audio
-      ffmpeg(videoPath)
-        .audioCodec('libmp3lame')
-        .audioBitrate(128)
-        .toFormat('mp3')
-        .on('start', () => {})
-        .on('progress', () => {})
-        .on('stderr', () => {})
-        .on('end', async () => {
-          // Ensure audio file exists and is not empty
-          if (fs.existsSync(audioPath) && fs.statSync(audioPath).size > 0) {
-            const caption = `*Title:* ${response.title || 'No Title'}\n` +
-                            `*Author:* ${response.author || 'Unknown'}\n` +
-                            `*Duration:* ${response.duration || 'Unknown'}\n` +
-                            `*Views:* ${response.views || '0'}\n` +
-                            `*Uploaded on:* ${response.upload || 'Unknown Date'}`;
-
-            // Send the converted audio only, no video
-            const mimeType = mime.lookup(audioPath) || 'audio/mpeg';
-            await conn.sendFile(m.chat, audioPath, 'audio.mp3', caption, m, false, {
-              mimetype: mimeType,
-              ptt: false,
-            });
-          } else {
-            console.error('Audio file is empty or not found!');
-            m.reply('Failed to convert video to audio. Please try again later.');
-          }
-
-          // Clean up the temporary video and audio files immediately
-          fs.unlinkSync(videoPath); // Delete the video file after conversion
-          fs.unlinkSync(audioPath); // Delete the audio file after sending
-        })
-        .on('error', (err) => {
-          m.reply('An error occurred while converting the video to audio. Please try again later.');
-        })
-        .save(audioPath); // Save audio file
+      await conn.sendFile(m.chat, mediaBuffer, 'video.mp4', caption, m, false, {
+        mimetype: 'video/mp4',
+        thumbnail: response.thumbnail,
+      });
     } catch (error) {
       console.error('Error fetching video:', error.message);
       await m.reply('An error occurred while fetching the video. Please try again later.');
@@ -150,9 +102,17 @@ handler.before = async (m, { conn }) => {
 
 handler.help = ['play'];
 handler.tags = ['downloader'];
-handler.command = ['play', 'song', 'spotify', 'playsong', 'ytplay'];
-
+handler.command = ['playvid', 'vidsong', 'ytvplay'];
 export default handler;
+
+function formatBytes(bytes, decimals = 2) {
+  if (bytes === 0) return '0 B';
+  const k = 1024;
+  const dm = decimals < 0 ? 0 : decimals;
+  const sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+}
 
 async function searchAndDownloadMusic(query) {
   try {
@@ -184,6 +144,7 @@ async function fetchWithRetry(url, options, retries = 3) {
   for (let i = 0; i < retries; i++) {
     const response = await fetch(url, options);
     if (response.ok) return response;
+    console.log(`Retrying... (${i + 1})`);
   }
   throw new Error('Failed to fetch media content after retries');
-                    }
+        }

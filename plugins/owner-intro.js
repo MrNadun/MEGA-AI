@@ -1,28 +1,37 @@
-import fetch from 'node-fetch'
+import fetch from 'node-fetch';
 
 let handler = async (m, { text, usedPrefix, command, conn }) => {
   try {
+    // Fetch environment variables with defaults
+    const OwnerName = process.env.OWNER_NAME || '𝙺𝙰𝚂𝙸𝙼 𝙰𝙻𝙸';
+    const timeZone = process.env.TIME_ZONE || '𝙿𝙰𝙺𝙸𝚂𝚃𝙰𝙽';
+    const profession = process.env.OWNER_STATUS || '𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁';
+    const skills = process.env.OWNER_SKILLS || '𝙹𝙰𝚅𝙰𝚂𝙲𝚁𝙸𝙿𝚃';
+    const language = process.env.LANGUAGE || '𝙴𝙽𝙶𝙻𝙸𝚂𝙷,𝚄𝚁𝙳𝚄';
+    const project = process.env.BOTNAME || '𝚄𝙻𝚃𝚁𝙰-𝙼𝙳';
+    const hobbies = process.env.HOBBIES || '𝙲𝙾𝙳𝙸𝙽𝙶,𝙱𝙾𝚃𝚂';
+
     // Expanded intro card text with additional fields
     const introText = `
  ◈ •╭═══ ━ ━ • ━ ━ ━ ═══♡᭄
  ◈ •│       「 𝗠𝗬 𝗜𝗡𝗧𝗥𝗢 」
- ◈ •│ Name    : 𝙺𝙰𝚂𝙸𝙼 𝙰𝙻𝙸
+ ◈ •│ Name    : ${OwnerName}
  ◈ •│
- ◈ •│ Place     : 𝙿𝙰𝙺𝙸𝚂𝚃𝙰𝙽
+ ◈ •│ Place     : ${timeZone}
  ◈ •│
  ◈ •│ Gender  : 𝙼𝙰𝙻𝙴
  ◈ •│
  ◈ •│ Age        : 𝟸𝟼_
  ◈ •│
- ◈ •│ Status   : 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁
+ ◈ •│ Status   : ${profession}
  ◈ •│
- ◈ •│ Skills     : 𝙹𝙰𝚅𝙰𝚂𝙲𝚁𝙸𝙿𝚃
+ ◈ •│ Skills     : ${skills}
  ◈ •│
- ◈ •│ Lang     : 𝙴𝙽𝙶𝙻𝙸𝚂𝙷,𝚄𝚁𝙳𝚄
+ ◈ •│ Lang     : ${language}
  ◈ •│
- ◈ •│ Project  : 𝚄𝙻𝚃𝚁𝙰-𝙼𝙳
+ ◈ •│ Project  : ${project}
  ◈ •│
- ◈ •│ Hobbie  : 𝙲𝙾𝙳𝙸𝙽𝙶,𝙱𝙾𝚃𝚂
+ ◈ •│ Hobbie  : ${hobbies}
  ◈ •╰═══ ━ ━ • ━ ━ ━ ═══♡᭄
     `;
 
@@ -36,14 +45,14 @@ let handler = async (m, { text, usedPrefix, command, conn }) => {
     }
 
     const sourceUrl = 'https://youtube.com/@GlobalTechInfo'; // Example source URL for the card
-
+    const OwnerImg = 'https://github.com/GlobalTechInfo.png';
     const contextInfo = {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: 'ULTRA-MD', // Title of the card
+        title: 'MEGA-AI', // Title of the card
         body: '𝑇𝛩𝑈𝐶𝛨 𝛨𝛯𝑅𝛯',
-        thumbnailUrl: 'https://github.com/GlobalTechInfo.png', // Fixed URL syntax with quotes
-        mediaUrl: 'https://github.com/GlobalTechInfo.png', // Fixed URL syntax with quotes
+        thumbnailUrl: OwnerImg, // Fixed URL syntax with quotes
+        mediaUrl: pp,  // Corrected to use profile picture URL fetched
         sourceUrl: sourceUrl, // Source URL for the card
       },
     };
