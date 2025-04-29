@@ -1,4 +1,4 @@
-import { createHash } from 'crypto'
+/* import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import fetch from 'node-fetch'
@@ -757,3 +757,4 @@ const quotes = [
   "I'm not saying I'm Spider-Man. I'm just saying no one has ever seen me and Spider-Man in the same room together.",
   "I'm not saying I'm a superhero. I'm just saying no one has ever seen me and a superhero in the same room together.",
 ]
+*/

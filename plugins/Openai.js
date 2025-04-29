@@ -15,32 +15,51 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
     conn.sendPresenceUpdate('composing', m.chat)
     const prompt = encodeURIComponent(text)
 
-    const guru1 = `https://api.gurusensei.workers.dev/llama?prompt=${prompt}`
+    const guru1 = `https://gtech-api-xtp1.onrender.com/api/gemini/flash?apikey=APIKEY&prompt=${prompt}`
 
     try {
       let response = await fetch(guru1)
       let data = await response.json()
-      let result = data.response.response
 
-      if (!result) {
-        throw new Error('No valid JSON response from the first API')
+      // Check if the response is valid and properly structured
+      if (data.status && data.text && data.text.parts && data.text.parts[0] && data.text.parts[0].text) {
+        let result = data.text.parts[0].text  // Correctly extract text from flash API
+
+        if (!result) {
+          throw new Error('No valid response from Gemini Flash API')
+        }
+
+        await conn.sendMessage(m.chat, { text: result }, { quoted: m })
+        m.react(done)
+      } else {
+        throw new Error('Invalid response structure from Gemini Flash API')
       }
-
-      // Send a simple message instead of a button
-      await conn.sendMessage(m.chat, { text: result }, { quoted: m })
-      m.react(done)
     } catch (error) {
-      console.error('Error from the first API:', error)
+      console.error('Error from Gemini Flash API:', error)
 
-      const guru2 = `https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`
+      const guru2 = `https://gtech-api-xtp1.onrender.com/api/gemini/ai?apikey=APIKEY&prompt=${prompt}`
 
-      let response = await fetch(guru2)
-      let data = await response.json()
-      let result = data.completion
+      try {
+        let response = await fetch(guru2)
+        let data = await response.json()
 
-      // Send a simple message instead of a button
-      await conn.sendMessage(m.chat, { text: result }, { quoted: m })
-      m.react(done)
+        // Check if the response is valid and properly structured
+        if (data.status && data.response) {
+          let result = data.response  // Correctly extract text from AI API
+
+          if (!result) {
+            throw new Error('No valid response from Gemini AI API')
+          }
+
+          await conn.sendMessage(m.chat, { text: result }, { quoted: m })
+          m.react(done)
+        } else {
+          throw new Error('Invalid response structure from Gemini AI API')
+        }
+      } catch (error) {
+        console.error('Error from Gemini AI API:', error)
+        throw `*ERROR*`
+      }
     }
   } catch (error) {
     console.error('Error:', error)
